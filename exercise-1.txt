@@ -1,0 +1,66 @@
+1. Newton Second Law
+------------
+
+STORE "massa(kg)" with value 600
+STORE "percepatan(m/m2)" with value 2
+STORE "hasil(newton)" with any value
+
+CALCULATE "massa(kg)" times "percepatan(m/m2)"
+SET "hasil(newton)" value with calculation result
+
+PRINT "hasil(newton)"
+
+
+
+
+2. Tahun Kabisat
+-------------
+
+STORE "tahun" with any value
+STORE "pernyataan1" with "tahun" MOD 
+STORE "pernyataan2" with "tahun" MOD 100
+STORE "pernyataan3" with "tahun" MOD 400
+
+IF "pernyataan1" EQUALS 0 AND "pernyataan2" NOT EQUALS 0
+    PRINT "tahun" adalah Tahun Kabisat
+ELSE IF "pernyataan1" EQUALS 0 AND "pernyataan2" EQUALS 0 AND "pernyataan3" EQUALS 0
+    PRINT "tahun" "adalah Tahun Kabisat"
+ELSE
+    PRINT "tahun" "adalah Bukan Tahun Kabisat"
+END IF
+
+
+
+
+3. Laundry Day
+-------------
+
+STORE "pakaian" with value 0
+
+WHILE "pakaian" < 20
+    ADD "pakaian" by 1
+END WHILE
+
+PRINT "Mesin cuci dinyalakan"
+
+
+
+
+4. Periksa Kuku
+-------------
+
+STORE "siswaSiswi" with value 0
+
+SET "kukuPanjang" without any value
+SET "kukuPendek" without any value
+
+FOR "siswaSiswi" = 0 to 40
+    IF "kukuPanjang" THEN
+        PRINT "guru menghukum siswa/siswi"
+    ELSE
+        PRINT "guru memuji siswa/siswi"
+    END IF
+    
+    ADD "siswaSiswi" by 1
+END FOR
+
